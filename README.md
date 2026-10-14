@@ -13,6 +13,16 @@ An interactive, high-performance geospatial analytics dashboard designed for dis
 
 ---
 
+## 📥 Downloadable Project Deliverables
+
+| File | Description | Direct Download Link |
+|:---|:---|:---:|
+| **25-Slide PowerPoint Presentation (.pptx)** | Fully editable technical presentation with comprehensive speaker notes for academic review | [📥 Download PPTX (3.4 MB)](https://github.com/FarhanaazRS/thoothukudi-saltpan-mapping/raw/main/public/downloads/Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pptx) |
+| **Complete Slide Deck PDF (.pdf)** | High-resolution 25-slide vector PDF export with full maps and analytical charts | [📄 Download PDF (2.5 MB)](https://github.com/FarhanaazRS/thoothukudi-saltpan-mapping/raw/main/public/downloads/Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pdf) |
+| **District Salt Pan Inventory (GeoJSON)** | 2,071 vector parcels (1,264.52 ha) strictly clipped to Thoothukudi District | [🗺️ Download GeoJSON](https://github.com/FarhanaazRS/thoothukudi-saltpan-mapping/raw/main/public/data/saltpan_inventory.geojson) |
+
+---
+
 ## 🗺️ Map Visualizations & Analysis
 
 ### 1. Authoritative District Salt Pan Inventory

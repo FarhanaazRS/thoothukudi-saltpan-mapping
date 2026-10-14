@@ -37,6 +37,58 @@ export function Sidebar({ active, onChange }: { active: Section; onChange: (s: S
           </li>
         ))}
       </ul>
+      <div className="sidebar-downloads" style={{ padding: '12px 14px', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)', margin: '12px 0', background: 'rgba(255,255,255,0.02)' }}>
+        <div style={{ fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--accent)', fontWeight: 700, marginBottom: '8px' }}>
+          Presentation &amp; Reports
+        </div>
+        <a
+          href="/downloads/Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pptx"
+          download="Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pptx"
+          className="download-btn pptx"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '7px 10px',
+            background: 'var(--panel-alt)',
+            color: 'var(--text-bright)',
+            borderRadius: '6px',
+            fontSize: '11px',
+            fontWeight: 600,
+            textDecoration: 'none',
+            border: '1px solid var(--accent)',
+            marginBottom: '6px',
+            transition: 'all 0.15s ease'
+          }}
+          title="Download full 25-slide PowerPoint Presentation"
+        >
+          <span style={{ fontSize: '14px' }}>📥</span>
+          <span>Download PPTX (25 Slides)</span>
+        </a>
+        <a
+          href="/downloads/Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pdf"
+          download="Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pdf"
+          className="download-btn pdf"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '7px 10px',
+            background: 'var(--panel-alt)',
+            color: 'var(--text-bright)',
+            borderRadius: '6px',
+            fontSize: '11px',
+            fontWeight: 600,
+            textDecoration: 'none',
+            border: '1px solid var(--border)',
+            transition: 'all 0.15s ease'
+          }}
+          title="Download Presentation as PDF"
+        >
+          <span style={{ fontSize: '14px' }}>📄</span>
+          <span>Download PDF Deck</span>
+        </a>
+      </div>
       <div className="sidebar-foot">
         <div><strong>Sentinel-2 Level-2A</strong></div>
         <div>UTM 43N • 20m Multi-spectral</div>
@@ -98,9 +150,53 @@ export function Header({
           <dd>{modelLabel}</dd>
         </div>
       </dl>
-      <div className={`status status-${status.tone}`} role="status" aria-live="polite">
-        <span className="dot" />
-        {status.text}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <a
+          href="/downloads/Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pptx"
+          download="Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pptx"
+          className="header-download-btn"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '6px 12px',
+            backgroundColor: 'rgba(242, 201, 76, 0.15)',
+            border: '1px solid var(--accent)',
+            borderRadius: '6px',
+            color: 'var(--accent)',
+            fontSize: '11px',
+            fontWeight: 600,
+            textDecoration: 'none',
+          }}
+          title="Download 25-Slide PowerPoint Presentation"
+        >
+          📥 Download PPTX
+        </a>
+        <a
+          href="/downloads/Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pdf"
+          download="Thoothukudi_Salt_Pan_Mapping_Project_Presentation.pdf"
+          className="header-download-btn"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px',
+            padding: '6px 12px',
+            backgroundColor: 'rgba(86, 180, 233, 0.15)',
+            border: '1px solid var(--cyan)',
+            borderRadius: '6px',
+            color: 'var(--cyan)',
+            fontSize: '11px',
+            fontWeight: 600,
+            textDecoration: 'none',
+          }}
+          title="Download Presentation PDF"
+        >
+          📄 PDF
+        </a>
+        <div className={`status status-${status.tone}`} role="status" aria-live="polite">
+          <span className="dot" />
+          {status.text}
+        </div>
       </div>
     </header>
   )
