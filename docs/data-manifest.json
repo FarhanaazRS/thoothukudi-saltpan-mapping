@@ -1,0 +1,115 @@
+{
+  "project_title": "Thoothukudi Salt Pan Intelligence",
+  "study_area": "Thoothukudi (Tuticorin) District, Tamil Nadu, India",
+  "crs_native": "EPSG:32643",
+  "crs_web": "EPSG:4326",
+  "audit_date": "2026-10-14",
+  "artifacts": [
+    {
+      "name": "District Boundary",
+      "source_path": "_district_mask_temp.gpkg",
+      "artifact_type": "vector_polygon",
+      "crs": "EPSG:4326",
+      "bounds": [77.672765, 8.321593, 78.385428, 9.372652],
+      "feature_count": 1,
+      "status": "authoritative",
+      "intended_use": "Base district clipping mask, spatial extent framing, and overview map boundary layer."
+    },
+    {
+      "name": "Salt Pan Inventory",
+      "source_path": "outputs/ml_benchmark/predictions/saltpan_inventory.gpkg",
+      "artifact_type": "vector_polygon",
+      "crs": "EPSG:32643",
+      "bounds": [824200.0, 936740.0, 856500.0, 1010320.0],
+      "feature_count": 2698,
+      "area_ha": 1631.96,
+      "fields": ["id", "area_m2", "area_ha", "class_name"],
+      "status": "authoritative",
+      "intended_use": "Primary interactive salt pan vector layer on map, search index, KPI cards, and feature inspector."
+    },
+    {
+      "name": "Probability Surface",
+      "source_path": "outputs/ml_benchmark/predictions/saltpan_probability.tif",
+      "artifact_type": "raster_float32",
+      "crs": "EPSG:32643",
+      "dimensions": [8491, 10617],
+      "pixel_size_m": [20.0, 20.0],
+      "value_range": [0.0, 0.9952],
+      "nodata": -9999.0,
+      "status": "authoritative",
+      "intended_use": "Confidence heatmap and continuous probability layer preview in map workspace."
+    },
+    {
+      "name": "Cleaned Prediction Raster",
+      "source_path": "outputs/ml_benchmark/predictions/saltpan_prediction_cleaned.tif",
+      "artifact_type": "raster_int8",
+      "crs": "EPSG:32643",
+      "dimensions": [8491, 10617],
+      "salt_pixels": 44402,
+      "area_ha": 1776.08,
+      "nodata": -1,
+      "status": "authoritative",
+      "intended_use": "Post-sieve classification raster layer for pixel-level spatial analytics."
+    },
+    {
+      "name": "Raw Prediction Raster",
+      "source_path": "outputs/ml_benchmark/predictions/saltpan_prediction_raw.tif",
+      "artifact_type": "raster_int8",
+      "crs": "EPSG:32643",
+      "dimensions": [8491, 10617],
+      "salt_pixels": 46830,
+      "area_ha": 1873.2,
+      "status": "intermediate",
+      "intended_use": "Benchmarking and sieve comparison audit."
+    },
+    {
+      "name": "Reference Training Polygons",
+      "source_path": "_tmp/salt_train_32643.gpkg",
+      "artifact_type": "vector_polygon",
+      "crs": "EPSG:32643",
+      "feature_count": 501,
+      "status": "reference",
+      "intended_use": "Reference training parcel overlay (off by default) for model provenance inspection."
+    },
+    {
+      "name": "ML Benchmark Metrics",
+      "source_path": "outputs/ml_benchmark/results/metrics.json",
+      "artifact_type": "json_metrics",
+      "status": "authoritative",
+      "intended_use": "KPI cards, Model Lab, and multi-algorithm comparison tables."
+    },
+    {
+      "name": "Model Comparison Table",
+      "source_path": "outputs/ml_benchmark/results/model_comparison.csv",
+      "artifact_type": "csv_table",
+      "status": "authoritative",
+      "intended_use": "Multi-model evaluation matrix across all 7 algorithms."
+    },
+    {
+      "name": "Confusion Matrices",
+      "source_path": "outputs/ml_benchmark/results/confusion_matrices.json",
+      "artifact_type": "json_matrices",
+      "status": "authoritative",
+      "intended_use": "Interactive contingency displays and error breakdown."
+    }
+  ],
+  "verified_kpis": {
+    "total_saltpan_area_ha": 1631.96,
+    "total_polygons": 2698,
+    "cleaned_raster_area_ha": 1776.08,
+    "raw_raster_area_ha": 1873.2,
+    "sieve_mmu_m2": 1000,
+    "best_holdout_model": "SVM_RBF",
+    "best_holdout_accuracy": 0.9951,
+    "best_holdout_f1": 0.8889,
+    "best_holdout_precision": 1.0,
+    "best_holdout_recall": 0.8,
+    "production_raster_model": "RandomForest",
+    "production_raster_trees": 300,
+    "production_roc_auc": 1.0,
+    "valid_classified_pixels": 52858018,
+    "valid_classified_area_ha": 211432.07,
+    "total_district_raster_pixels": 90148947,
+    "valid_pixel_pct": 58.63
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "stages": [
+    {
+      "stage": "Raw District Prediction",
+      "artifact": "saltpan_prediction_raw.tif (district mask)",
+      "units": "pixels (20m resolution)",
+      "count": 35398,
+      "area_ha": 1415.92,
+      "change_ha": 0.0,
+      "change_pct": 0.0,
+      "description": "Raw pixel-level Random Forest binary classification strictly within Thoothukudi district."
+    },
+    {
+      "stage": "Sieve Filter Post-Processing",
+      "artifact": "saltpan_prediction_cleaned.tif (district mask)",
+      "units": "pixels (20m resolution)",
+      "count": 34065,
+      "area_ha": 1362.6,
+      "change_ha": -53.32,
+      "change_pct": -3.77,
+      "description": "Morphological sieve filter removing isolated pixel clumps < 1,000 m2 within district."
+    },
+    {
+      "stage": "Vector Polygonization & MMU",
+      "artifact": "saltpan_inventory.gpkg (district clipped)",
+      "units": "polygons (vector parcels)",
+      "count": 2071,
+      "area_ha": 1264.52,
+      "change_ha": -98.08,
+      "change_pct": -7.2,
+      "description": "Vector polygonization with strict Minimum Mapping Unit (MMU >= 1,000 m2) filter within district."
+    }
+  ],
+  "total_reduction_ha": 151.4,
+  "total_reduction_pct": -10.69,
+  "regional_full_scene": {
+    "total_polygons": 2698,
+    "total_area_ha": 1631.96,
+    "outside_district_polygons": 627,
+    "outside_district_area_ha": 367.44,
+    "notes": "Regional satellite inference included 627 polygons outside Thoothukudi district in adjacent districts (Ramanathapuram, Tirunelveli), which are excluded from the district inventory."
+  },
+  "notes": "Post-processing eliminates spatial noise and sub-resolution slivers. Strictly clipped to Thoothukudi district boundary."
+}

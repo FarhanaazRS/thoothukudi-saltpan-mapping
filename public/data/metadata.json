@@ -1,0 +1,86 @@
+{
+  "project_name": "Thoothukudi Salt Pan Intelligence",
+  "subtitle": "District Mapping & Classification Analytics",
+  "version": "1.1.0",
+  "generated_at": "2026-10-15T00:28:08.026291",
+  "study_area": {
+    "name": "Thoothukudi District",
+    "state": "Tamil Nadu, India",
+    "bbox": [
+      77.67276476700005,
+      8.321593413000073,
+      78.38542805000003,
+      9.372651701000052
+    ],
+    "center": [
+      78.029,
+      8.847
+    ],
+    "default_zoom": 9.2
+  },
+  "sensors": [
+    {
+      "name": "Sentinel-2 MSI Level-2A",
+      "provider": "European Space Agency (ESA)",
+      "acquisitions": [
+        {
+          "tile": "T43PHK",
+          "date": "2026-08-10"
+        },
+        {
+          "tile": "T44PKR",
+          "date": "2026-08-10"
+        },
+        {
+          "tile": "T43PHL",
+          "date": "2026-09-04"
+        }
+      ],
+      "bands_used": [
+        "B02 (Blue)",
+        "B03 (Green)",
+        "B04 (Red)",
+        "B08 (NIR)",
+        "B11 (SWIR-1)",
+        "B12 (SWIR-2)"
+      ]
+    },
+    {
+      "name": "ESA WorldCover 2021",
+      "resolution_m": 10,
+      "role": "Supporting land-cover reference and water exclusion mask"
+    }
+  ],
+  "kpis": {
+    "total_saltpan_area_ha": 1264.52,
+    "total_polygons": 2071,
+    "cleaned_raster_area_ha": 1362.6,
+    "raw_raster_area_ha": 1415.92,
+    "sieve_mmu_m2": 1000,
+    "top_holdout_model": "SVM (RBF Kernel)",
+    "top_holdout_accuracy": 0.9951,
+    "top_holdout_f1": 0.8889,
+    "top_holdout_precision": 1.0,
+    "top_holdout_recall": 0.8,
+    "production_raster_model": "Random Forest (300 trees)",
+    "production_roc_auc": 1.0,
+    "production_precision": 1.0,
+    "valid_classified_pixels": 52858018,
+    "valid_classified_area_ha": 211432.07,
+    "total_district_raster_pixels": 90148947,
+    "valid_pixel_pct": 58.63,
+    "regional_total_polygons": 2698,
+    "regional_total_area_ha": 1631.96,
+    "outside_district_polygons_removed": 627,
+    "outside_district_area_removed_ha": 367.44
+  },
+  "provenance": {
+    "authoritative_inventory": "outputs/ml_benchmark/predictions/saltpan_inventory.gpkg (district clipped)",
+    "authoritative_cleaned_raster": "outputs/ml_benchmark/predictions/saltpan_prediction_cleaned.tif (district mask)",
+    "authoritative_probability_raster": "outputs/ml_benchmark/predictions/saltpan_probability.tif (district mask)",
+    "district_clipping": "Strictly clipped to official Thoothukudi administrative boundary (_district_mask_temp.gpkg); 627 out-of-district polygons removed.",
+    "validation_strategy": "Spatial block holdout (20% holdout, 206 polygons)",
+    "independent_field_validation": false,
+    "validation_note": "Holdout evaluation performed on spatially grouped polygons; no external ground truth field points available."
+  }
+}

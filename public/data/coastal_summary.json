@@ -1,0 +1,34 @@
+[
+  {
+    "band": "0-5km",
+    "label": "Immediate Coastal Zone (0\u20135 km)",
+    "description": "Direct coastal margin along the Gulf of Mannar, highest tidal influence and seawater intake access.",
+    "count": 615,
+    "area_ha": 429.82,
+    "pct_area": 34.0
+  },
+  {
+    "band": "5-10km",
+    "label": "Near Coastal Zone (5\u201310 km)",
+    "description": "Secondary coastal belt supporting large organized evaporation reservoirs and crystal pans.",
+    "count": 673,
+    "area_ha": 376.35,
+    "pct_area": 29.8
+  },
+  {
+    "band": "10-30km",
+    "label": "Intermediate Coastal Plain (10\u201330 km)",
+    "description": "Flat inland salterns and sub-surface brine extraction facilities in coastal taluks.",
+    "count": 780,
+    "area_ha": 457.7,
+    "pct_area": 36.2
+  },
+  {
+    "band": ">30km",
+    "label": "Inland / Peripheral (>30 km)",
+    "description": "Dispersed inland salt pans and hypersaline flats away from the immediate shoreline.",
+    "count": 3,
+    "area_ha": 0.64,
+    "pct_area": 0.1
+  }
+]

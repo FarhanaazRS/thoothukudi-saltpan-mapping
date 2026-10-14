@@ -1,0 +1,66 @@
+[
+  {
+    "class_code": 60,
+    "class_name": "Bare / sparse vegetation (Class 60/62)",
+    "description": "Dry crystallized salt beds, earthen embankments, and bare salt flats.",
+    "parcel_count": 1032,
+    "pct_parcels": 49.8,
+    "context_role": "Primary spectral proxy for dry/crusted salt pans."
+  },
+  {
+    "class_code": 80,
+    "class_name": "Permanent water bodies (Class 80)",
+    "description": "Brine evaporation reservoirs, condenser pans, and tidal inlet intake channels.",
+    "parcel_count": 819,
+    "pct_parcels": 39.5,
+    "context_role": "Water-filled salt pans spectrally resemble shallow open water."
+  },
+  {
+    "class_code": 30,
+    "class_name": "Grassland / Sparse Herbaceous",
+    "description": "Halophytic grasses and peripheral salt marsh margins.",
+    "parcel_count": 70,
+    "pct_parcels": 3.4,
+    "context_role": "Vegetated peripheral bunds."
+  },
+  {
+    "class_code": 40,
+    "class_name": "Cropland (Adjacent)",
+    "description": "Agricultural field borders in non-saline deltaic pockets.",
+    "parcel_count": 52,
+    "pct_parcels": 2.5,
+    "context_role": "Adjacent agricultural transition."
+  },
+  {
+    "class_code": 20,
+    "class_name": "Shrubland (Prosopis / scrub)",
+    "description": "Invasive Prosopis juliflora shrubs growing on elevated salt pan bunds.",
+    "parcel_count": 48,
+    "pct_parcels": 2.3,
+    "context_role": "Bund vegetation."
+  },
+  {
+    "class_code": 90,
+    "class_name": "Herbaceous Wetland / Mangrove",
+    "description": "Coastal tidal marshes and mangrove fringes.",
+    "parcel_count": 41,
+    "pct_parcels": 2.0,
+    "context_role": "Intertidal wetlands."
+  },
+  {
+    "class_code": 10,
+    "class_name": "Tree Cover / Orchard",
+    "description": "Palmyra palms and shelterbelts along access roadways.",
+    "parcel_count": 8,
+    "pct_parcels": 0.4,
+    "context_role": "Boundary trees."
+  },
+  {
+    "class_code": 50,
+    "class_name": "Built-up / Infrastructure",
+    "description": "Salt refinery sheds and pump houses.",
+    "parcel_count": 1,
+    "pct_parcels": 0.0,
+    "context_role": "Processing buildings."
+  }
+]

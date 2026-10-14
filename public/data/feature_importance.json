@@ -1,0 +1,250 @@
+{
+  "RandomForest": [
+    {
+      "feature": "NDVI_p25",
+      "importance": 0.1509
+    },
+    {
+      "feature": "NDVI_median",
+      "importance": 0.1196
+    },
+    {
+      "feature": "NDVI",
+      "importance": 0.0936
+    },
+    {
+      "feature": "NDVI_p75",
+      "importance": 0.0698
+    },
+    {
+      "feature": "B03_p75",
+      "importance": 0.0527
+    },
+    {
+      "feature": "B03_median",
+      "importance": 0.0465
+    },
+    {
+      "feature": "MNDWI_p75",
+      "importance": 0.0343
+    },
+    {
+      "feature": "B03_p25",
+      "importance": 0.0316
+    },
+    {
+      "feature": "B02_p75",
+      "importance": 0.031
+    },
+    {
+      "feature": "Blue_SWIR1_ratio",
+      "importance": 0.0293
+    },
+    {
+      "feature": "MNDWI_median",
+      "importance": 0.0286
+    },
+    {
+      "feature": "MNDWI",
+      "importance": 0.0244
+    },
+    {
+      "feature": "NDMI_p75",
+      "importance": 0.0235
+    },
+    {
+      "feature": "B02_median",
+      "importance": 0.0191
+    },
+    {
+      "feature": "SWIR_ratio",
+      "importance": 0.0184
+    }
+  ],
+  "ExtraTrees": [
+    {
+      "feature": "MNDWI_p75",
+      "importance": 0.0631
+    },
+    {
+      "feature": "MNDWI_median",
+      "importance": 0.0628
+    },
+    {
+      "feature": "NDVI_median",
+      "importance": 0.056
+    },
+    {
+      "feature": "NDVI_p25",
+      "importance": 0.0545
+    },
+    {
+      "feature": "B03_median",
+      "importance": 0.0461
+    },
+    {
+      "feature": "MNDWI",
+      "importance": 0.0453
+    },
+    {
+      "feature": "NDVI_p75",
+      "importance": 0.0438
+    },
+    {
+      "feature": "B03_p75",
+      "importance": 0.0431
+    },
+    {
+      "feature": "B02_p75",
+      "importance": 0.038
+    },
+    {
+      "feature": "Blue_SWIR1_ratio",
+      "importance": 0.0331
+    },
+    {
+      "feature": "NDVI",
+      "importance": 0.0331
+    },
+    {
+      "feature": "MNDWI_p25",
+      "importance": 0.033
+    },
+    {
+      "feature": "B03_p25",
+      "importance": 0.0316
+    },
+    {
+      "feature": "B04_p25",
+      "importance": 0.0315
+    },
+    {
+      "feature": "B04_p75",
+      "importance": 0.0303
+    }
+  ],
+  "GradientBoosting": [
+    {
+      "feature": "NDVI_median",
+      "importance": 0.4001
+    },
+    {
+      "feature": "NDVI_p25",
+      "importance": 0.2368
+    },
+    {
+      "feature": "NDMI_p25",
+      "importance": 0.0266
+    },
+    {
+      "feature": "MNDWI_p75",
+      "importance": 0.0259
+    },
+    {
+      "feature": "NDVI_p75",
+      "importance": 0.0236
+    },
+    {
+      "feature": "dist_water_p75",
+      "importance": 0.023
+    },
+    {
+      "feature": "NDMI_p75",
+      "importance": 0.0226
+    },
+    {
+      "feature": "SWIR_ratio",
+      "importance": 0.0201
+    },
+    {
+      "feature": "NDVI",
+      "importance": 0.0165
+    },
+    {
+      "feature": "Blue_SWIR1_ratio",
+      "importance": 0.0158
+    },
+    {
+      "feature": "NDMI_median",
+      "importance": 0.0151
+    },
+    {
+      "feature": "B04_p25",
+      "importance": 0.0151
+    },
+    {
+      "feature": "MNDWI_p25",
+      "importance": 0.0123
+    },
+    {
+      "feature": "B08_p25",
+      "importance": 0.0118
+    },
+    {
+      "feature": "B02_p75",
+      "importance": 0.0109
+    }
+  ],
+  "XGBoost": [
+    {
+      "feature": "NDVI_p25",
+      "importance": 0.3701
+    },
+    {
+      "feature": "NDVI_median",
+      "importance": 0.0968
+    },
+    {
+      "feature": "NDMI_p75",
+      "importance": 0.0348
+    },
+    {
+      "feature": "NDVI",
+      "importance": 0.0296
+    },
+    {
+      "feature": "B03_p75",
+      "importance": 0.0281
+    },
+    {
+      "feature": "NDMI_median",
+      "importance": 0.0263
+    },
+    {
+      "feature": "MNDWI_p75",
+      "importance": 0.0224
+    },
+    {
+      "feature": "MNDWI",
+      "importance": 0.0219
+    },
+    {
+      "feature": "MNDWI_p25",
+      "importance": 0.0213
+    },
+    {
+      "feature": "SWIR_ratio",
+      "importance": 0.0193
+    },
+    {
+      "feature": "MNDWI_median",
+      "importance": 0.0184
+    },
+    {
+      "feature": "B03_median",
+      "importance": 0.0178
+    },
+    {
+      "feature": "NDMI",
+      "importance": 0.0159
+    },
+    {
+      "feature": "B12_p25",
+      "importance": 0.0154
+    },
+    {
+      "feature": "Blue_SWIR1_ratio",
+      "importance": 0.0153
+    }
+  ]
+}
